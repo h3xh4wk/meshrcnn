@@ -3,7 +3,8 @@ import logging
 from collections import defaultdict
 import torch
 import torch.nn.functional as F
-from pytorch3d.ops import knn_gather, knn_points, sample_points_from_meshes
+from pytorch3d.ops import sample_points_from_meshes
+from pytorch3d.ops.knn import knn_gather, knn_points
 
 logger = logging.getLogger(__name__)
 
